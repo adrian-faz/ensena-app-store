@@ -136,6 +136,7 @@
 		3ADB11A12A082676004D725F /* Familia III.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11A02A082676004D725F /* Familia III.plist */; };
 		3ADB11A32A082684004D725F /* Familia IV.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ADB11A22A082684004D725F /* Familia IV.plist */; };
 		3ADB11A52A086984004D725F /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADB11A42A086984004D725F /* InfoView.swift */; };
+		3AEDC0D72A08B61A00DEE75D /* practiceLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEDC0D62A08B61A00DEE75D /* practiceLogic.swift */; };
 		5B0813A92919D09400702602 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813A82919D09400702602 /* ProfileView.swift */; };
 		5B0813AC2919D0B500702602 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813AB2919D0B500702602 /* DictionaryView.swift */; };
 		5B0813B2291AF39200702602 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0813B1291AF39200702602 /* User.swift */; };
@@ -314,6 +315,7 @@
 		3ADB11A02A082676004D725F /* Familia III.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Familia III.plist"; sourceTree = "<group>"; };
 		3ADB11A22A082684004D725F /* Familia IV.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Familia IV.plist"; sourceTree = "<group>"; };
 		3ADB11A42A086984004D725F /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		3AEDC0D62A08B61A00DEE75D /* practiceLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceLogic.swift; sourceTree = "<group>"; };
 		5B0813A82919D09400702602 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5B0813AB2919D0B500702602 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		5B0813B1291AF39200702602 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -619,6 +621,7 @@
 				3ADB11172A05A0EF004D725F /* Verbos Comunes II.plist */,
 				3ADB11192A082148004D725F /* Familia I.plist */,
 				3ADB119E2A0824BE004D725F /* Familia II.plist */,
+				3AEDC0D62A08B61A00DEE75D /* practiceLogic.swift */,
 			);
 			path = "Ensena-App";
 			sourceTree = "<group>";
@@ -936,6 +939,7 @@
 				5B8048DF29220A2D00245162 /* Answer.swift in Sources */,
 				5B35A36B291E8B0C00BA8735 /* LearnView.swift in Sources */,
 				5B2D9E5029223BE700A9C75D /* LoadingView.swift in Sources */,
+				3AEDC0D72A08B61A00DEE75D /* practiceLogic.swift in Sources */,
 				5B8048E629220A7B00245162 /* ProgressRow.swift in Sources */,
 				5BAF4F332919B72000900570 /* Ensena_AppApp.swift in Sources */,
 				5B35A36D291E917100BA8735 /* Word.swift in Sources */,

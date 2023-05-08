@@ -38,7 +38,6 @@ struct LearnView: View {
     
     var body: some View {
         
-        
         VStack(spacing: -105){
             // HEADER
             
