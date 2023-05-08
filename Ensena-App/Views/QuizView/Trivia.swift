@@ -7,33 +7,30 @@
 
 import Foundation
 
-struct Trivia: Decodable {
-    var questionList: [Result]
+struct Trivia {
+    var questionList: [Result]?
     
-    struct Result: Decodable, Identifiable {
+    struct Result: Identifiable {
         var id: UUID {
             UUID()
         }
-        var correct: String
-        var incorrectList: [[String]]
-        var type: String
-        var url: String
+        var correct: String?
+        var incorrectList: [String]?
+        var type: String?
+        var url: String?
+        var answers: [Answer]?
         
-        var answers: [Answer] {
+        mutating func createAnswers() {
             do {
-               let right = [Answer(text: try AttributedString(markdown: correct), isCorrect: true)]
-               let incorrects = try incorrectList[0].map { answer in
+                let right = [Answer(text: try AttributedString(markdown: correct!), isCorrect: true)]
+                let incorrects = try incorrectList!.map { answer in
                     Answer(text: try AttributedString(markdown: answer), isCorrect: false)
                 }
                let allAnswers = right + incorrects
-                return allAnswers.shuffled()
-                
-                
-                
+                self.answers = allAnswers.shuffled()
             }
             catch {
                 print("Error setting answers: \(error)")
-                return []
             }
         }
 

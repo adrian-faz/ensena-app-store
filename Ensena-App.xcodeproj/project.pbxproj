@@ -56,6 +56,7 @@
 		5BAF4F6F2919B98700900570 /* Courses-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F6E2919B98700900570 /* Courses-ViewModel.swift */; };
 		5BAF4F732919B9D700900570 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F722919B9D700900570 /* Course.swift */; };
 		5BAF4F7A2919BA6700900570 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAF4F792919BA6700900570 /* LoginView.swift */; };
+		FB57FB582A03362F00A6903D /* practiceLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB57FB572A03362F00A6903D /* practiceLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		5BAF4F6E2919B98700900570 /* Courses-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Courses-ViewModel.swift"; sourceTree = "<group>"; };
 		5BAF4F722919B9D700900570 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		5BAF4F792919BA6700900570 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FB57FB572A03362F00A6903D /* practiceLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +281,7 @@
 				3ABEAB5A2A008EB000C98650 /* Abecedario.plist */,
 				3A93BFE72A0156F800361C4F /* Cuerpo.plist */,
 				3A93C00F2A015BE700361C4F /* Preguntas.plist */,
+				FB57FB572A03362F00A6903D /* practiceLogic.swift */,
 			);
 			path = "Ensena-App";
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				5B35A36D291E917100BA8735 /* Word.swift in Sources */,
 				5B8048E429220A6500245162 /* AnswerRow.swift in Sources */,
 				5B8048D3292205A700245162 /* MainQuizView.swift in Sources */,
+				FB57FB582A03362F00A6903D /* practiceLogic.swift in Sources */,
 				5B8048D8292209CB00245162 /* Trivia.swift in Sources */,
 				5B8048DA292209EB00245162 /* TriviaManager.swift in Sources */,
 				5BAF4F6B2919B93E00900570 /* Content-ViewModel.swift in Sources */,

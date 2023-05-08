@@ -95,7 +95,7 @@ struct TriviaView: View {
 struct TriviaView_Previews: PreviewProvider {
     static var previews: some View {
         TriviaView()
-            .environmentObject(TriviaManager(courseId: "6364360774dfad2101e1f079"))
+            .environmentObject(TriviaManager(courseId: "Abecedario"))
     }
 }
 

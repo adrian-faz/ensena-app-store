@@ -16,7 +16,7 @@ struct MainQuizView: View {
             
             VStack(spacing: 40){
                     VStack(spacing: 20){
-                        Text("Quiz: \(currentCourseTitle)" ).font(.title)
+                        Text("Quiz: \(cursoId)" ).font(.title)
                             .fontWeight(.heavy)
                             .foregroundColor(Color("Teal"))
                         
@@ -49,6 +49,11 @@ struct MainQuizView: View {
                 .background(Color("LightBlue"))
                 
         }
+        .onAppear{
+            currentCourseId = cursoId
+            currentCourseTitle = cursoId
+        }
+
     } 
     
 }
@@ -56,6 +61,6 @@ struct MainQuizView: View {
 
 struct MainQuizView_Previews: PreviewProvider {
     static var previews: some View {
-        MainQuizView(cursoId: "6364360774dfad2101e1f079")
+        MainQuizView(cursoId: "Abecedario")
     }
 }

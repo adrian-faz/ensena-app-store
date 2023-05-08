@@ -61,28 +61,24 @@ struct QuestionView: View {
                 
 
                 if (triviaManager.type == "img") {
-                AsyncImage(url: URL(string: triviaManager.url)) { imagen in
-                    imagen.resizable()
-                }  placeholder: {
-                    Color("CadetBlue")
-                }
-                .frame(width: 320, height: 240)
-                    .cornerRadius(20)
-                    .padding()
+                    Image(triviaManager.url)
+                        .resizable()
+                        .frame(width: 310, height: 250)
+                        .cornerRadius(10)
                     
                 } else if (triviaManager.type == "vid"){
                     let miUrl = triviaManager.url
-                   let player = AVPlayer(url: URL(string: miUrl)!)
-
+                    let player = AVPlayer(url: Bundle.main.url(forResource: miUrl, withExtension: "m4v")!)
+                    
                     VideoPlayer(player: player)
                         .frame(width: 320, height: 240)
-                        .cornerRadius(25)
-                        .padding()
-                        .onAppear {
+                        .cornerRadius(10)
+                        .onAppear() {
                             player.play()
                             addObserver(player: player)
                         }
-                        .onDisappear {
+                        .onDisappear{
+                            
                             removeObserver(player: player)
                         }
                         
@@ -116,6 +112,7 @@ struct QuestionView: View {
             .edgesIgnoringSafeArea(.all)
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
+                
             }
             else{
                 LoadingView(strong: false)
@@ -142,9 +139,3 @@ struct QuestionView: View {
     
 }
 
-struct QuestionView_Previews: PreviewProvider {
-    static var previews: some View {
-        QuestionView()
-            .environmentObject(TriviaManager(courseId: "6364360774dfad2101e1f079"))
-    }
-}
