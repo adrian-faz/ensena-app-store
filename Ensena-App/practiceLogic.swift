@@ -9,7 +9,7 @@ import Foundation
 
 func getPractice(course:String) -> Trivia {
     var words: [Palabra]
-    words = cargaPalabras(course: course)
+    words = cargaPalabras(course: currentCourseId)
     
     var trivia: Trivia = Trivia()
     var questionList: [Trivia.Result] = []

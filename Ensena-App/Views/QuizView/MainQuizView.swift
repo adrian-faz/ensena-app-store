@@ -16,7 +16,7 @@ struct MainQuizView: View {
             
             VStack(spacing: 40){
                     VStack(spacing: 20){
-                        Text("Quiz: \(currentCourseTitle)" ).font(.title)
+                        Text("Quiz: \(cursoId)" ).font(.title)
                             .fontWeight(.heavy)
                             .foregroundColor(Color("Teal"))
                         
@@ -49,6 +49,11 @@ struct MainQuizView: View {
                 .background(Color("LightBlue"))
                 
         }
+        .onAppear{
+            currentCourseId = cursoId
+            currentCourseTitle = cursoId
+        }
+
     } 
     
 }

@@ -89,19 +89,23 @@ struct CourseView: View {
                     }
                     
                    VStack {
-                       NavigationLink(destination: MainQuizView(cursoId: courseName)){
-                           Text("Practica")
-                               .fontWeight(.semibold)
-                               .font(.system(size: 15))
-                               .padding(8)
-                               .foregroundColor(.white)
-                               .background(Color(!review ? "MidnightGreen" : "CadetBlue"))
-                               .cornerRadius(50)
-                       }
-                       .onTapGesture {
-                           currentCourseTitle = courseName
-                           currentCourseId = courseName
-                       }
+                       
+                       
+    
+                           NavigationLink(destination: MainQuizView(cursoId: courseName)){
+  
+                                   Text("Practica")
+                                       .fontWeight(.semibold)
+                                       .font(.system(size: 15))
+                                       .padding(8)
+                                       .foregroundColor(.white)
+                                       .background(Color(!review ? "MidnightGreen" : "CadetBlue"))
+                                       .cornerRadius(50)
+                           
+                         }
+                       
+                       
+
                     }
                     
                     Spacer()

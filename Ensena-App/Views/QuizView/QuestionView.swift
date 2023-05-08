@@ -112,6 +112,7 @@ struct QuestionView: View {
             .edgesIgnoringSafeArea(.all)
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
+                
             }
             else{
                 LoadingView(strong: false)
@@ -138,9 +139,3 @@ struct QuestionView: View {
     
 }
 
-struct QuestionView_Previews: PreviewProvider {
-    static var previews: some View {
-        QuestionView()
-            .environmentObject(TriviaManager(courseId: "6364360774dfad2101e1f079"))
-    }
-}
