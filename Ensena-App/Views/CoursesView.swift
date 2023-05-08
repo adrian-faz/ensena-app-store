@@ -89,15 +89,19 @@ struct CourseView: View {
                     }
                     
                    VStack {
-
-                              Text("Practica")
-                                  .fontWeight(.semibold)
-                                  .font(.system(size: 15))
-                                  .padding(8)
-                                  .foregroundColor(.white)
-                                  .background(Color(!review ? "MidnightGreen" : "CadetBlue"))
-                                  .cornerRadius(50)
-                                  
+                       NavigationLink(destination: MainQuizView(cursoId: courseName)){
+                           Text("Practica")
+                               .fontWeight(.semibold)
+                               .font(.system(size: 15))
+                               .padding(8)
+                               .foregroundColor(.white)
+                               .background(Color(!review ? "MidnightGreen" : "CadetBlue"))
+                               .cornerRadius(50)
+                       }
+                       .onTapGesture {
+                           currentCourseTitle = courseName
+                           currentCourseId = courseName
+                       }
                     }
                     
                     Spacer()
@@ -145,7 +149,7 @@ func cargaInfo() -> [Curso] {
     var listaCursos = [Curso]()
     
     do {
-        var miurl = URL(fileURLWithPath: ruta ?? "")
+        let miurl = URL(fileURLWithPath: ruta ?? "")
         print(miurl)
         let data = try Data.init(contentsOf: miurl)
         

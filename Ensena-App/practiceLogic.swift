@@ -7,17 +7,35 @@
 
 import Foundation
 
-func getPractice(course:String) -> [String] {
+func getPractice(course:String) -> Trivia {
     var words: [Palabra]
     words = cargaPalabras(course: course)
     
-    //var questionList = []
-
-    for word in words{
-        //word.
-        word
-    }
-                
+    var trivia: Trivia = Trivia()
+    var questionList: [Trivia.Result] = []
     
-    return []
+    
+    for word in words{
+        var result = Trivia.Result()
+        result.correct = word.word
+        result.type = word.type
+        result.url = word.fileName
+        
+        var arrayHelper: [String] = []
+        while arrayHelper.count < 3{
+            let n = Int.random(in: 0...words.count - 1)
+            let randomWord = words[n].word
+            if randomWord != word.word && !arrayHelper.contains(randomWord){
+                arrayHelper.append(randomWord)
+            }
+        }
+        
+        result.incorrectList = arrayHelper
+        result.createAnswers()
+        questionList.append(result)
+    }
+    
+    trivia.questionList = questionList.shuffled()
+    
+    return trivia
 }

@@ -56,6 +56,6 @@ struct MainQuizView: View {
 
 struct MainQuizView_Previews: PreviewProvider {
     static var previews: some View {
-        MainQuizView(cursoId: "6364360774dfad2101e1f079")
+        MainQuizView(cursoId: "Abecedario")
     }
 }

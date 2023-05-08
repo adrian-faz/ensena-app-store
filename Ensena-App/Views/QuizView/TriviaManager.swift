@@ -21,7 +21,7 @@ class TriviaManager: ObservableObject {
     @Published private(set) var answerChoices: [Answer] = []
     @Published private(set) var progress: Float = 0.00
     @Published private(set) var score = 0
-    @Published var cursoActual: String = "6364360774dfad2101e1f079"
+    @Published var cursoActual: String = "Abecedario"
 
     
     init(courseId: String) {
@@ -31,6 +31,7 @@ class TriviaManager: ObservableObject {
     }
     
     func fetchTrivia(courseId: String) async {
+        /*
         guard let url = URL(string: ("http://127.0.0.1:5000/course/" + courseId + "/practice")) else {fatalError("Missing URL")}
         
         let urlRequest = URLRequest(url: url)
@@ -43,23 +44,19 @@ class TriviaManager: ObservableObject {
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let decodedData = try decoder.decode(Trivia.self, from: data)
-            
+            */
             DispatchQueue.main.async{
                 self.index = 0
                 self.score = 0
                 self.progress = 0.00
                 self.reachedEnd = false
                 
-                self.trivia = decodedData.questionList
+                //Se tiene que cambiar a que el curso actual sea el string del curso, ahorita esta harcode
+                self.trivia = getPractice(course: courseId).questionList!
                 self.length = self.trivia.count
                 self.setQuestion()
                 
             }
-            
-            
-        } catch {
-            print("Error fetching trivia: \(error)")
-        }
     }
     func goToNextQuestion() {
         if index + 1 < length{
@@ -76,9 +73,9 @@ class TriviaManager: ObservableObject {
         
         if index < length {
             let currentTriviaQuestion = trivia[index]
-            url = currentTriviaQuestion.url
-            answerChoices = currentTriviaQuestion.answers
-            type = currentTriviaQuestion.type
+            url = currentTriviaQuestion.url!
+            answerChoices = currentTriviaQuestion.answers!
+            type = currentTriviaQuestion.type!
         }
         
     }
