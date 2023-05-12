@@ -64,7 +64,7 @@ struct QuestionView: View {
                     
                     Image(triviaManager.url)
                                            .resizable()
-                                           .frame(width: 310, height: 250)
+                                           .frame(width: 260, height: 200)
                                            .cornerRadius(10)
 
                     
@@ -73,7 +73,7 @@ struct QuestionView: View {
                     let player = AVPlayer(url: Bundle.main.url(forResource: miUrl, withExtension: "m4v")!)
 
                     VideoPlayer(player: player)
-                        .frame(width: 320, height: 240)
+                        .frame(width: 260, height: 200)
                         .cornerRadius(10)
                         .onAppear {
                             player.play()
@@ -98,11 +98,9 @@ struct QuestionView: View {
                     Text("Siguiente")
                     .foregroundColor(.white)
                     .padding()
-                    .padding(.horizontal)
                     .background(triviaManager.answerSelected ? Color("Teal") : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
                     .cornerRadius(30)
                     .shadow(radius: 10)
-                    .padding(.top, 15)
                 }
                 .disabled(!triviaManager.answerSelected)
             

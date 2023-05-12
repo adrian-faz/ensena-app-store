@@ -111,13 +111,8 @@ struct LearnView: View {
                     
                     VideoPlayer(player: player)
                         .frame(height: 263)
-                        .onAppear() {
-                            addObserver(player: player)
-                        }
-                        .onDisappear{
-                            
-                            removeObserver(player: player)
-                        }
+                     
+
                     
                     
                     
@@ -136,8 +131,6 @@ struct LearnView: View {
                     radius: 8,
                     x: 0,
                     y: 0)
-
-            
             
         }
         

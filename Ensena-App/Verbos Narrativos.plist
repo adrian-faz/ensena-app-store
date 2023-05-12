@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Conocer</string>
+		<key>word</key>
+		<string>Conocer</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Entender</string>
+		<key>word</key>
+		<string>Entender</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Gustar</string>
+		<key>word</key>
+		<string>Gustar</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Haber</string>
+		<key>word</key>
+		<string>Haber</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Noconocer</string>
+		<key>word</key>
+		<string>No conocer</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Noentender</string>
+		<key>word</key>
+		<string>No entender</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Nogustar</string>
+		<key>word</key>
+		<string>No gustar</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Nohaber</string>
+		<key>word</key>
+		<string>No haber</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Nopoder</string>
+		<key>word</key>
+		<string>No poder</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Noquerer</string>
+		<key>word</key>
+		<string>No querer</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Nosaber</string>
+		<key>word</key>
+		<string>No saber</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Noservir</string>
+		<key>word</key>
+		<string>No servir</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Poder</string>
+		<key>word</key>
+		<string>Poder</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Querer</string>
+		<key>word</key>
+		<string>Querer</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Saber</string>
+		<key>word</key>
+		<string>Saber</string>
+	</dict>
+	<dict>
+		<key>type</key>
+		<string>vid</string>
+		<key>fileName</key>
+		<string>Servir</string>
+		<key>word</key>
+		<string>Servir</string>
+	</dict>
+</array>
+</plist>
