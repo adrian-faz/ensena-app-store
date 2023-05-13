@@ -7,15 +7,27 @@
 
 import Foundation
 
-func getPractice(course:String) -> Trivia {
+func getPractice(course:String, numberQuestions: Int) -> Trivia {
     var words: [Palabra]
     words = cargaPalabras(course: currentCourseId)
+    var amountQuestions = numberQuestions
     
     var trivia: Trivia = Trivia()
     var questionList: [Trivia.Result] = []
     
-    
-    for word in words{
+    var wordList: [String] = []
+    if amountQuestions > words.count{
+        amountQuestions = words.count
+    }
+    while questionList.count < amountQuestions{
+        let n = Int.random(in: 0...words.count - 1)
+        let word = words[n]
+        if wordList.contains(word.word){
+            continue
+        }
+        
+        wordList.append(word.word)
+        
         var result = Trivia.Result()
         result.correct = word.word
         result.type = word.type

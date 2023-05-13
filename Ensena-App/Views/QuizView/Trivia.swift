@@ -16,7 +16,7 @@ struct Trivia {
         var url: String?
         var answers: [Answer]?
         
-        mutating func createAnswers() {
+        public mutating func createAnswers() {
             do {
                 let right = [Answer(text: try AttributedString(markdown: correct!), isCorrect: true)]
                 let incorrects = try incorrectList!.map { answer in
