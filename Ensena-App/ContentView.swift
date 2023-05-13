@@ -33,14 +33,7 @@ struct ContentView: View {
     var body: some View {
        
         TabView{
-            
-            
-            
-            InfoView().tabItem {
-                Image(systemName: "info.circle.fill")
-                Text("Info")
-                
-            }
+        
             
             CoursesView().tabItem{
                 Image(systemName: "hand.point.up.left")
@@ -52,6 +45,12 @@ struct ContentView: View {
                     
                     
                 Text("Diccionario")
+            }
+            
+            InfoView().tabItem {
+                Image(systemName: "info.circle.fill")
+                Text("Info")
+                
             }
             
         }.accentColor(Color("MidnightGreen")).onAppear {

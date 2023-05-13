@@ -10,40 +10,56 @@ import SwiftUI
 struct InfoView: View {
     var body: some View {
         
-        VStack{
+        VStack {
             
-            VStack{
+            Text("Sobre 'EnSeña'")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding(15)
+            
+            VStack (alignment: .leading, spacing: 10){
                 
-                Image("EnsenaWhite")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 250)
-                    .padding(.top, 60)
-                    .offset(x:20)
-              
-                    }.frame(maxWidth: .infinity, maxHeight: 350)
-                .shadow(radius: 10)
-            .background(RoundedRectangle(cornerRadius: 55).fill(.teal))
-            
-            
-            HStack{
-                Text("¡Bienvenido a ")
-                    .padding(0)
                 
-                Text("enSeña!")
-                    .fontWeight(.heavy)
-                    .padding(0)
-                    .foregroundColor(.teal)
-            }
-            
-            .padding(.top,40)
-            .font(.title)
-            
-            
-            Spacer()
-            
+                    Text("Objetivo")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                    
+                    Text("Permitir que las personas puedan aprender Lengua de Señas Mexicana de una manera fácil e interactiva. Buscar una sociedad más inclusiva.")
+                    .font(.footnote)
+                    .padding(.bottom)
+                
+                Text("Desarrolladores")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                
+                Text("Esta aplicación fue desarrollada por alumnos del Tecnológico de Monterrey de la carrera de Ingeniería en Tecnologías Computacionales. Se desarrolló para el curso de Integración de Seguridad Informática y sistemas de software.\n")
+                    .font(.caption)
+                
+                
+                Text("Adrián Martín Hernández Barrientos\nFrancisco Mestizo Hernández\nAdrián Emmanuel Faz Mercado\nIan Alexis Odria Marín \nPablo Navarro Zepeda")
+                    .font(.caption)
+                    .italic()
+                    .padding(.bottom)
 
-        }.ignoresSafeArea(.all)
+                
+                
+            
+                    Text("Créditos ")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                
+                Text("A la profesora del laboratorio de iOS, Yolanda Martínez.\nA la profesora de Lengua de Señas Mexicana, Edyth de la Rosa.\nA los profesores del curso, Jessica Izquierdo Álvarez y Jorge Héctor de la Rosa Paredes.\nA la creadora del contenido audiovisual, Regina Márquez.\n")
+                    .font(.caption)
+                
+                    
+   
+                Spacer()
+
+                
+
+            }
+
+        }.padding()
         
         
         
