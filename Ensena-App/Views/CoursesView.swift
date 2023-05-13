@@ -151,7 +151,6 @@ func cargaInfo() -> [Curso] {
     
     do {
         let miurl = URL(fileURLWithPath: ruta ?? "")
-        print(miurl)
         let data = try Data.init(contentsOf: miurl)
         
         listaCursos = try PropertyListDecoder().decode([Curso].self, from: data)

@@ -37,11 +37,20 @@ class TriviaManager: ObservableObject {
                 self.score = 0
                 self.progress = 0.00
                 self.reachedEnd = false
-                self.trivia = getPractice(course: currentCourseId).questionList!
+                self.trivia = getPractice(course: currentCourseId, numberQuestions: 1).questionList!
                 self.length = self.trivia.count
                 self.setQuestion()
                 
             }
+    }
+    func resetQuestions(courseId: String, numQuestions: Int) {
+        self.index = 0
+        self.score = 0
+        self.progress = 0.00
+        self.reachedEnd = false
+        self.trivia = getPractice(course: currentCourseId, numberQuestions: numQuestions).questionList!
+        self.length = self.trivia.count
+        self.setQuestion()
     }
     func goToNextQuestion() {
         if index + 1 < length{

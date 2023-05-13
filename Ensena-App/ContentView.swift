@@ -12,7 +12,7 @@ var currentCourseId: String = ""
 var currentCourseTitle: String = ""
 var idUserGlobal: String = ""
 var isAdminGlobal: Bool = false
-
+var numberQuestions: Int = 5
 
 
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TriviaView: View {
     @EnvironmentObject var triviaManager: TriviaManager
-
+    
     var body: some View {
         if triviaManager.reachedEnd{
         VStack(spacing: 20){
@@ -25,7 +25,7 @@ struct TriviaView: View {
             
             Button {
                 Task.init{
-                    await triviaManager.fetchTrivia(courseId: currentCourseId)
+                    await triviaManager.resetQuestions(courseId: currentCourseId, numQuestions: numberQuestions)
                 }
             } label: {
                     Text("Jugar de Nuevo")
