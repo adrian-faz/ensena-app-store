@@ -20,9 +20,7 @@ struct CoursesView: View {
 
             ScrollView{
                 ForEach(listaCursos){ c in
-                        
                     CourseView(image: c.image, courseName: c.name, courseId: c.id, review: c.review)
-                
                 }
             }
             .onAppear{

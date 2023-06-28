@@ -2,37 +2,125 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<dict>
-		<key>type</key>
-		<string>vid</string>
-		<key>fileName</key>
-		<string>boca</string>
-		<key>word</key>
-		<string>Boca</string>
-	</dict>
-	<dict>
-		<key>type</key>
-		<string>vid</string>
-		<key>fileName</key>
-		<string>cabeza</string>
-		<key>word</key>
-		<string>Cabeza</string>
-	</dict>
-	<dict>
-		<key>type</key>
-		<string>vid</string>
-		<key>fileName</key>
-		<string>cara</string>
-		<key>word</key>
-		<string>Cara</string>
-	</dict>
-	<dict>
-		<key>type</key>
-		<string>vid</string>
-		<key>fileName</key>
-		<string>corazon</string>
-		<key>word</key>
-		<string>Corazón</string>
-	</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Boca</string>
+<key>word</key>
+<string>Boca</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Cabeza</string>
+<key>word</key>
+<string>Cabeza</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Cara</string>
+<key>word</key>
+<string>Cara</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Cejas</string>
+<key>word</key>
+<string>Cejas</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Corazon</string>
+<key>word</key>
+<string>Corazon</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Estomago</string>
+<key>word</key>
+<string>Estomago</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Hueso</string>
+<key>word</key>
+<string>Hueso</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Mano</string>
+<key>word</key>
+<string>Mano</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Nariz</string>
+<key>word</key>
+<string>Nariz</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Ojos</string>
+<key>word</key>
+<string>Ojos</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Oreja</string>
+<key>word</key>
+<string>Oreja</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Pestanas</string>
+<key>word</key>
+<string>Pestanas</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Piel</string>
+<key>word</key>
+<string>Piel</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Pies</string>
+<key>word</key>
+<string>Pies</string>
+</dict>
+<dict>
+<key>type</key>
+<string>vid</string>
+<key>fileName</key>
+<string>Sangre</string>
+<key>word</key>
+<string>Sangre</string>
+</dict>
 </array>
 </plist>

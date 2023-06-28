@@ -106,10 +106,7 @@ struct MainQuizView: View {
                     
                 }
                 .padding(.horizontal, 20)
-                
 
-                    
-                    
                 }.frame(maxWidth: .infinity, maxHeight: .infinity)
                     .edgesIgnoringSafeArea(.all)
                 
